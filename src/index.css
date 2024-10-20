@@ -394,6 +394,7 @@ input {
   margin-bottom: 20px;
   z-index: 1000;
   text-align: center; /* Centra el contenido */
+
 }
 
 .tarjeta {
@@ -401,25 +402,11 @@ input {
   padding: 20px 50px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.795);
-  font-size: 14px;
-  margin-bottom: 10px; /* Espacio entre la tarjeta y el botón */
+  font-size: 15px;
+
 }
 
 
-.tarjeta p{
-  margin-bottom: 15px; /* Espacio entre la tarjeta y el botón */
-}
-
-.seguir-boton {
-  background-color: #0077b5; /* Color de fondo de LinkedIn */
-  color: white; /* Color del texto */
-  text-decoration: none; /* Quita el subrayado del enlace */
-  padding: 10px 45px;
-  border-radius: 5px;
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  font-size: 14px;
-  margin-top: 40px;
-}
 
 .seguir-boton:hover {
   background-color: #005582; /* Color de fondo al pasar el ratón */
