@@ -1,0 +1,604 @@
+/* Importar fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Roboto', sans-serif; /* Define la fuente en el root */
+}
+
+body {
+  font-family: var(--font-family); /* Usar la fuente definida en el root */
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #e0e0e0; /* Color de texto claro */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  height: calc(100% - 100px);
+  margin-top: 85px; /* Deja espacio para el header */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e; /* Color de fondo del encabezado */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: space-between; /* Espacia el contenido en los extremos */
+  padding: 20px; /* Espaciado interno */
+  color: #e0e0e0; /* Color de texto claro */
+  position: fixed; /* Fijo para que permanezca en la parte superior */
+  top: 0; /* Alinear al tope de la ventana */
+  left: 0; /* Alinear a la izquierda de la ventana */
+  right: 0; /* Alinear a la derecha de la ventana */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5); /* Sombra para destacar el header */
+}
+
+header img {
+  width: 15%; /* Ajusta el tamaño del logo al ancho de la columna */
+  height: 50px; /* Ajusta el tamaño del logo al alto de la columna */
+  margin-right: 210px;
+}
+
+header .iconomicrofono {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+  font-size: 26px; /* Tamaño del ícono */
+  color: #bbb; /* Color del ícono */
+  margin-top: 10px;
+  margin-left: 15px;
+  transition: color 0.5s; /* Efecto de transición para el color del ícono */
+  &&:hover{
+    color: #12ff12; /* Cambia el color del ícono al pasar el ratón */
+  }
+ 
+}
+
+.search-container {
+  position: relative; /* Necesario para posicionar el ícono relativo al input */
+  display: inline-block; /* Para que el contenedor se ajuste al contenido */
+}
+
+.search-bar {
+  padding-right: 30px; /* Espacio para evitar que el texto se superponga con el ícono */
+  width: 700px; /* Ancho del campo de búsqueda */
+  padding: 13px; /* Espaciado interno */
+  border: 1px solid #444; /* Bordes del input */
+  border-radius: 50px; /* Esquinas redondeadas */
+  background-color: #333; /* Fondo del input */
+  color: #e0e0e0; /* Color del texto del input */
+}
+
+.search-icon {
+  position: absolute; /* Posiciona el ícono de manera absoluta */
+  right: 10px; /* Espacio desde la derecha */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajusta el ícono para que esté centrado verticalmente */
+  color: #bbb; /* Color del ícono */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+  font-size: 16px; /* Tamaño del ícono */
+}
+
+header button {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+  font-size: 16px; /* Tamaño del ícono */
+  border-radius: 50px;
+  width: 100px; /* Cambiado a un tamaño más adecuado */
+  margin-left: 120px;
+  background-color: #444; /* Fondo del botón */
+  color: #e0e0e0; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px; /* Espaciado interno */
+  transition: background-color 0.3s; /* Efecto de transición */
+  
+}
+
+header button:hover {
+  background-color: #2ac50b; /* Color de fondo al hacer hover */
+}
+
+/* Slidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1e1e1e; /* Color de fondo del sidebar */
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+ 
+  cursor: pointer;
+  color: #e0e0e0; /* Color de texto */
+}
+
+.sidebar ul li {
+  display: flex; /* Para alinear los íconos y el texto */
+  align-items: center; /* Centra verticalmente */
+  padding: 10px 5px; /* Espaciado vertical */
+}
+
+.sidebar ul li i {
+  margin-right: 25px; /* Espacio entre el ícono y el texto */
+  color: #999; /* Color de los íconos */
+}
+
+.sidebar li:hover, .sidebar li.active {
+  background-color: #333; /* Color de fondo al hacer hover */
+  border-radius: 30px;
+}
+
+/* Video List */
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las tarjetas */
+  
+}
+
+.user-image {
+  display: inline-flex; /* Hace que la imagen y el texto se alineen */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  width: 20px; /* Tamaño del fondo */
+  height: 20px; /* Tamaño del fondo */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  overflow: hidden; /* Asegura que la imagen se mantenga dentro del círculo */
+  margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+.user-image img {
+  width: 100%; /* Asegura que la imagen llene el contenedor */
+  height: 100%; /* Asegura que la imagen llene el contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+
+
+
+/*LISTA VIDEOS*/
+.video-item {
+  margin-top: 10px;
+  padding: 5px; /* Espacio interno */
+  border-radius: 8px; /* Esquinas redondeadas */
+  text-align: left; /* Centra el texto dentro de la tarjeta */
+  width: 330px; /* Ancho fijo para las tarjetas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  transition: 0.3s;
+  &&:hover{
+    background-color: #2c2c2c;
+    transform: scale(0.98);
+  }
+}
+
+.video-texto{
+  margin-top: 20px;
+}
+
+.video-item h3 {
+  font-size: 16px; /* Tamaño de fuente para el título */
+  margin: 5px 0; /* Espaciado vertical del título */
+  color: #e0e0e0; /* Color del texto */
+}
+
+.video-item p:last-of-type {
+  font-size: 14px; /* Tamaño de fuente para las visualizaciones */
+  color: #bbb; /* Color del texto de visualizaciones */
+  margin: 0; /* Sin margen */
+}
+
+/* Comments */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #444; /* Bordes más oscuros */
+}
+
+.comment strong {
+  color: #bbb; /* Color del texto fuerte */
+}
+
+/* NavBar */
+.navbar {
+  background-color: #1e1e1e; /* Color de fondo del navbar */
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-size: 18px;
+  color: #e0e0e0; /* Color del texto */
+}
+
+.navbar li:hover {
+  color: #cc0000; /* Color al hacer hover */
+}
+
+/* Para lista canales */
+.channel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.channel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.channel-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  box-shadow:  8px 8px #000000;
+}
+
+.channel-item img:hover {
+  box-shadow: 8px 8px 10px  0 rgba(26, 194, 90, 0.5); /* Sombra al hacer hover */
+  transform: scale(1.1);
+}
+
+.channel-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #e0e0e0; /* Color de texto */
+}
+
+/* ICONO + EN LISTA CANALES */
+.channel-item i {
+  color: #e0e0e0; /* Color del ícono */
+  margin-top: 10px;
+  font-size: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.channel-item i:hover {
+  color: #cc0000; /* Cambia el color del ícono al hover */
+}
+
+/*formulario*/
+/* Estilos para el contenedor del formulario */
+.content-form-pag{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+.form-container {
+  background-color: #282828; /* Fondo ligeramente más claro que el body */
+  border-radius: 8px;
+  padding: 30px;
+  width: 400px; /* Ancho fijo */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+  
+}
+
+/* Estilos del título */
+h2 {
+  color: #FFFFFF; /* Texto blanco */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.auth-form {
+  display: flex;
+  flex-direction: column; /* Coloca los inputs en una columna */
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+  margin-bottom: 15px; /* Espacio entre los grupos */
+}
+
+/* Estilos para las etiquetas */
+label {
+  color: #FFFFFF; /* Texto blanco */
+  margin-bottom: 5px;
+  font-weight: bold; /* Negrita para mayor claridad */
+}
+
+/* Estilos para los inputs */
+input {
+  padding: 10px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #3A3A3A; /* Fondo oscuro para inputs */
+  color: #FFFFFF; /* Texto blanco */
+  transition: border 0.3s;
+  width: 100%; /* Ancho del 100% para alineación */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilo para inputs con error */
+.input-error {
+  border: 1px solid #FF0000; /* Borde rojo si hay error */
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+  color: #FF0000; /* Texto rojo para mensajes de error */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Estilos para el botón de enviar */
+.submit-btn {
+  padding: 12px;
+  background-color: #FF0000; /* Rojo YouTube */
+  color: #FFFFFF; /* Texto blanco */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold; /* Negrita para mayor claridad */
+  width: 100%; /* Ancho del 100% para el botón */
+}
+
+/* Efecto hover para el botón */
+.submit-btn:hover {
+  background-color: #D50000; /* Rojo oscuro al pasar el mouse */
+}
+
+
+/* Diseño responsive */
+@media screen and (max-width: 1280px) {
+  .video-item {
+    width: calc(50% - 20px);
+  }
+  .header {
+    flex-direction: row; /* Mantener alineación horizontal en pantallas pequeñas */
+    align-items: center; /* Alinear los elementos en el centro verticalmente */
+    padding: 10px; /* Espaciado interno */
+  }
+
+  header img {
+    width: 15%; /* Ajustar el tamaño del logo al 30% en pantallas pequeñas */
+    margin: 0; /* Quitar márgenes en pantallas pequeñas */
+  }
+
+  .search-container {
+    width: 55%; /* Hacer que la barra de búsqueda ocupe todo el ancho */
+    margin-top: 10px;
+
+  }
+
+  header button {
+    width: auto; /* Ajustar el tamaño del botón */
+    margin-left: 0px; /* Espaciado horizontal */
+  }
+
+  header .iconomicrofono {
+    font-size: 26px; /* Tamaño del ícono */
+    color: #bbb; /* Color del ícono */
+    margin-top: 0px;
+    margin-left: 0px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+ /*ESTILOS PARA EL HEADER*/
+ 
+  .header {
+    flex-direction: row; /* Mantener alineación horizontal en pantallas pequeñas */
+    align-items: center; /* Alinear los elementos en el centro verticalmente */
+    padding: 10px; /* Espaciado interno */
+  }
+
+  header img {
+    width: 30%; /* Ajustar el tamaño del logo al 30% en pantallas pequeñas */
+    margin: 0; /* Quitar márgenes en pantallas pequeñas */
+  }
+
+  .search-container {
+    width: 40%; /* Hacer que la barra de búsqueda ocupe todo el ancho */
+    margin-top: 10px;
+
+  }
+
+  header button {
+    width: auto; /* Ajustar el tamaño del botón */
+    margin-left: 0px; /* Espaciado horizontal */
+  }
+
+  header .iconomicrofono {
+    font-size: 26px; /* Tamaño del ícono */
+    color: #bbb; /* Color del ícono */
+    margin-top: 0px;
+    margin-left: 0px;
+    
+  }
+ 
+/*ESTILOS PARA EL SLIDER*/
+.sidebar {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+br{
+  display: none; /* Oculta el elemento, pero sigue ocupando espacio */
+}
+hr {
+  display: none; /* Oculta el elemento, pero sigue ocupando espacio */
+}
+
+.lista-nombresCanales-sliders {
+display:none;  
+}
+
+.sidebar ul li {
+display: inline-flex; /* Cambiar a inline-flex para alinearlos en fila */
+margin: 5px 10px; /* Espacio vertical entre los elementos */
+}
+
+
+.channel-list {
+  flex-direction: row;
+}
+
+/*cambiamos el tamanio de las imagenes*/
+.channel-item img {
+  width: 65px;
+  height: 65px;
+}
+
+/*cambiamos el tamanio del icono + */
+.channel-item i {
+  font-size: 30px;
+}
+
+.video-frame {
+  height: 200px;
+}
+  .content {
+    flex-direction: column;
+  }
+
+  /*estilos para el slider bar*/
+ 
+
+
+
+  .video-list {
+    padding: 10px;
+  }
+
+  .video-item {
+    width: 100%;
+  }
+
+  .video-frame {
+    height: 300px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    padding: 10px 0;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ /*estilos para el header*/
+  .header {
+    flex-direction: row; /* Mantener alineación horizontal en pantallas pequeñas */
+    align-items: center; /* Alinear los elementos en el centro verticalmente */
+    padding: 10px; /* Espaciado interno */
+
+  }
+
+  header img {
+    width: 30%; /* Ajustar el tamaño del logo al 30% en pantallas pequeñas */
+    margin: 0; /* Quitar márgenes en pantallas pequeñas */
+  }
+
+  .search-container {
+    width: 40%; /* Hacer que la barra de búsqueda ocupe todo el ancho */
+    margin-top: 10px;
+
+  }
+
+  header button {
+    width: auto; /* Ajustar el tamaño del botón */
+    margin-left: 0px; /* Espaciado horizontal */
+  }
+
+  header .iconomicrofono {
+    font-size: 26px; /* Tamaño del ícono */
+    color: #bbb; /* Color del ícono */
+    margin-top: 0px;
+    margin-left: 0px;
+    
+   
+  }
+
+/*estilos para el slider*/
+.sidebar{
+  display: none;
+}
+
+ /*estilos para el la lista de canales arriba de los videos*/ 
+  .channel-list {
+    flex-direction: row;
+  }
+
+  /*cambiamos el tamanio de las imagenes*/
+  .channel-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*cambiamos el tamanio del icono + */
+  .channel-item i {
+    font-size: 12px;
+  }
+  
+  .video-frame {
+    height: 200px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
