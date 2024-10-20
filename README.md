@@ -1,6 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es Realizado con React+Vite+NodejS con comunicacion entre componentes.
+
+Sitio Web https://kodigomusicangelalvarado.netlify.app/ .
+
+Version de Node v20.18.0 .
+npm install --save @fortawesome/fontawesome-free /*ICONOS.
+npm install react-router-dom /* DIRECCIONAMIENTO.
+npm install react-hook-form /*formulario.
 
 Currently, two official plugins are available:
 
