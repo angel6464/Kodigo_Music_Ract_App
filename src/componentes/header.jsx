@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
     <header className="header">
-      <img src="img/youtubeimg3.png" alt="" />
+      <img src="img/youtubeimg4.png" alt="" />
       <div className="search-container">
         <input type="text" placeholder="Buscar" className="search-bar" />
         <i className="fas fa-search search-icon"></i> {/* Ícono de lupa */}
