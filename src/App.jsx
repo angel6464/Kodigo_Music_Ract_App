@@ -4,6 +4,7 @@ import Header from './componentes/header';
 import Listavideos from './componentes/listavideos';
 import Slider from './componentes/slider';
 import Listacanales from './componentes/listasCanales';
+import Footerflotante from './componentes/Footerflotante';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Listavideos />
         </div>
       </div>
+      <Footerflotante/>
     </div>
   );
 }
