@@ -5,23 +5,23 @@ function Slider() {
   return (
     <aside className="sidebar">
       <div className="sidebar-content">
-        <ul>
-          <li className="active"><i className="fas fa-home"></i>Inicio</li>
-          <li><i className="fas fa-video"></i>Shorts</li>
-          <li><i className="fas fa-user-plus"></i>Suscripciones</li>
-        </ul>
-        <br />
-        <hr />
-        <br />
-        <ul className='lista-nombresCanales-sliders'>
-          <li><i className="fas fa-history"></i>Historial</li>
-          <li><i className="fas fa-list"></i>Lista Reproducción</li>
-          <li><i className="fas fa-film"></i>Mis Videos</li>
-          <li><i className="fas fa-podcast"></i>Tus Podcasts</li>
-          <li><i className="fas fa-clock"></i>Ver Más Tarde</li>
-          <li><i className="fas fa-thumbs-up"></i>Videos</li>
-          <li><i className="fas fa-file-video"></i>Tus Clips</li>
-        </ul>
+      <ul>
+  <li className="active"><i className="fas fa-house-user"></i> Inicio</li>
+  <li><i className="fas fa-music"></i> New Musica</li>
+  <li><i className="fas fa-heart"></i> Favoritos</li>
+</ul>
+<br />
+<hr />
+<br />
+<ul className='lista-nombresCanales-sliders'>
+  <li><i className="fas fa-clock-rotate-left"></i> Historial</li>
+  <li><i className="fas fa-list-alt"></i> Lista Reproducción</li>
+  <li><i className="fas fa-headphones"></i> Mi Musica</li>
+  <li><i className="fas fa-podcast"></i> Tus Podcasts</li>
+  <li><i className="fas fa-clock"></i> Ver Más Tarde</li>
+  <li><i className="fas fa-heart"></i> Favoritos</li>
+  <li><i className="fas fa-video"></i> Tus Clips</li>
+</ul>
         <br />
         <hr />
         <br />
