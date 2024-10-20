@@ -6,22 +6,22 @@ function Listavideos() {
   const audioRefs = useRef([]);
 
   const videos = [
-    { title: 'Rush-Music', views: '1M de visualizaciones', img: '/img/video1.jpg', audio: '/src/assets/rush.mp3' },
-    { title: 'Clock- Ocarina Of Time', views: '500K de visualizaciones', img: '/img/video2.jpg', audio: '/src/assets/zelda.mp3' },
-    { title: 'Mix-Stranger Things', views: '250K de visualizaciones', img: '/img/video3.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Music Rush', views: '100K de visualizaciones', img: '/img/video4.jpg', audio: '/src/assets/cash.mp3' },
-    { title: 'Cash-Happy Music', views: '75K de visualizaciones', img: '/img/video5.jpg', audio: '/src/assets/mile.mp3' },
-    { title: 'Epic - Song', views: '50K de visualizaciones', img: '/img/video6.jpg', audio: '/src/assets/epic.mp3' },
-    { title: 'Título Video 7', views: '20K de visualizaciones', img: '/img/video7.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 8', views: '10K de visualizaciones', img: '/img/video8.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 9', views: '5K de visualizaciones', img: '/img/video9.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 10', views: '2K de visualizaciones', img: '/img/video10.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 11', views: '1K de visualizaciones', img: '/img/video11.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 12', views: '500 de visualizaciones', img: '/img/video12.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 13', views: '250 de visualizaciones', img: '/img/video13.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 14', views: '100 de visualizaciones', img: '/img/video14.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 15', views: '75 de visualizaciones', img: '/img/video15.jpg', audio: '/src/assets/stran.mp3' },
-    { title: 'Título Video 16', views: '50 de visualizaciones', img: '/img/video16.jpg', audio: '/src/assets/stran.mp3' },
+    { title: 'Rush-Music', views: '1M de visualizaciones', img: '/img/video1.jpg', audio: '/img/rush.mp3' },
+    { title: 'Clock- Ocarina Of Time', views: '500K de visualizaciones', img: '/img/video2.jpg', audio: '/img/zelda.mp3' },
+    { title: 'Mix-Stranger Things', views: '250K de visualizaciones', img: '/img/video3.jpg', audio: '/img/stran.mp3' },
+    { title: 'Music Rush', views: '100K de visualizaciones', img: '/img/video4.jpg', audio: '/img/cash.mp3' },
+    { title: 'Cash-Happy Music', views: '75K de visualizaciones', img: '/img/video5.jpg', audio: '/img/mile.mp3' },
+    { title: 'Epic - Song', views: '50K de visualizaciones', img: '/img/video6.jpg', audio: '/img/epic.mp3' },
+    { title: 'Título Video 7', views: '20K de visualizaciones', img: '/img/video7.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 8', views: '10K de visualizaciones', img: '/img/video8.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 9', views: '5K de visualizaciones', img: '/img/video9.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 10', views: '2K de visualizaciones', img: '/img/video10.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 11', views: '1K de visualizaciones', img: '/img/video11.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 12', views: '500 de visualizaciones', img: '/img/video12.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 13', views: '250 de visualizaciones', img: '/img/video13.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 14', views: '100 de visualizaciones', img: '/img/video14.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 15', views: '75 de visualizaciones', img: '/img/video15.jpg', audio: '/img/stran.mp3' },
+    { title: 'Título Video 16', views: '50 de visualizaciones', img: '/img/video16.jpg', audio: '/img/stran.mp3' },
   ];
 
   const handleAudioClick = (index) => {
