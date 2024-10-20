@@ -5,15 +5,15 @@ const Footerflotante = () => {
   return (
     <div className="footer-flotante">
       <div className="tarjeta">
-        <p>Creador Angel Alvarado<a 
+        <p>Creador por Angel Alvarado</p>
+        <a 
         href="https://www.linkedin.com/in/angel-aristides-alvarado-landaverde-322bb6246/" 
         target="_blank" 
         rel="noopener noreferrer"
         className="seguir-boton"
       >
         Ver Perfil
-      </a></p>
-        
+      </a>
       </div>
      
     </div>
