@@ -6,7 +6,7 @@ function Listavideos() {
   const audioRefs = useRef([]);
 
   const videos = [
-    { title: 'Rush-Music', views: '1M de visualizaciones', img: '/img/video1.jpg', audio: '/img/rush.mp3' },
+    { title: 'Rusggfg', views: '1M de visualizaciones', img: '/img/video1.jpg', audio: '/img/rush.mp3' },
     { title: 'Clock- Ocarina Of Time', views: '500K de visualizaciones', img: '/img/video2.jpg', audio: '/img/zelda.mp3' },
     { title: 'Mix-Stranger Things', views: '250K de visualizaciones', img: '/img/video3.jpg', audio: '/img/stran.mp3' },
     { title: 'Music Rush', views: '100K de visualizaciones', img: '/img/video4.jpg', audio: '/img/cash.mp3' },
