@@ -13,7 +13,7 @@ function Header() {
       <i className="fas fa-microphone microphone-icon iconomicrofono"></i> {/* Ícono de micrófono */}
 
       <Link to="/formulario">
-      <button>Iniciar Sesion{/* Ícono de usuario */} </button> 
+      <button><i className="fas fa-user user-icon"></i> {/* Ícono de usuario */} </button> 
       </Link>
  
     </header>
