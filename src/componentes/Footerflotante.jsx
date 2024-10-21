@@ -5,7 +5,7 @@ const Footerflotante = () => {
   return (
     <div className="footer-flotante">
       <div className="tarjeta">
-        <p>Creador por Angel Alvarado</p>
+        <p>Creado por Angel Alvarado</p>
       </div>
      
     </div>
